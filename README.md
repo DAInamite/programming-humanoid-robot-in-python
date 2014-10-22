@@ -1,7 +1,7 @@
 Programming Humanoid Robot In Python
 ====================================
 
-Source code for open course: http://www.dainamite.de/lehre/programming-humanoid-robot-in-python/
+Source code of open course [Programming Humanoid Robot in Python](http://www.dainamite.de/lehre/programming-humanoid-robot-in-python/)
 
 
 ## How to submit your exercise?
@@ -20,7 +20,7 @@ Depending on your knowlege of git, there are 3 ways to download the code, do exe
 7. send me your github account
 
 ### Clone the repository and send me your code in zip
-1. clone the repository your computer
+1. clone the repository your computer:
   ```
   git@github.com:DAInamite/programming-humanoid-robot-in-python.git
   ```
