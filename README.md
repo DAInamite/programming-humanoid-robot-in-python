@@ -5,7 +5,7 @@ Source code for open course: http://www.dainamite.de/lehre/programming-humanoid-
 
 
 ## How to submit your exercise?
-Depending on your knowlege of git, there are 3 ways how you can download the code, do exercise and submit.
+Depending on your knowlege of git, there are 3 ways to download the code, do exercise and submit.
 
 ### (Recommended) Fork the repository and send me your github account
 1. create a github account if you don't have
