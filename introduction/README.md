@@ -26,8 +26,11 @@ simspark
 2. follow the instruction in http://simspark.sourceforge.net/wiki/index.php/Main_Page
 
 ### Python
+First you have to [setup python](http://learnpythonthehardway.org/book/ex0.html), then install python libraries.
 The recommended way to install python libraries is using *pip*.
+
 #### Ubuntu
+
 ```
 sudo apt-get install pip
 sudo pip install numpy matplotlib
@@ -42,11 +45,13 @@ python -m pip install numpy matplotlib
 ```
 
 ## Try out python
-If you are new to python, you can try it out online: http://www.codecademy.com/en/tracks/python
+If you are new to python, you can [try it out online](http://www.codecademy.com/en/tracks/python). It is recommended to [Learn Python the Hard Way](http://learnpythonthehardway.org/book/).
 
 ## Try out sample agent
 ### start sample agent
 1. start simspark
+	* [learn how to use simspark](http://simspark.sourceforge.net/wiki/index.php/Monitor)
+
 2. start a console (cmd in windows)
 3. go to the *introduction* source code folder
 ```
