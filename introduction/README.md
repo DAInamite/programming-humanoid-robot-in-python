@@ -33,7 +33,7 @@ The recommended way to install python libraries is using *pip*.
 
 ```
 sudo apt-get install pip
-sudo pip install numpy matplotlib
+sudo pip install numpy matplotlib ipython
 ```
 #### Windows
 1. download and install python: https://www.python.org/download/windows/
