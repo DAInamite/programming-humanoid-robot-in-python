@@ -184,8 +184,8 @@ class Action(object):
         self.speed = {}
 
     def to_commands(self):
-        speed = ['(%ss %.2f)' % (JOINT_CMD_NAMES[k], v) for k, v in self.speed]
-        stiffness = ['(%ss %.2f)' % (JOINT_CMD_NAMES[k], v) for k, v in self.stiffness]
+        speed = ['(%s %.2f)' % (JOINT_CMD_NAMES[k], v) for k, v in self.speed.iteritems()]
+        stiffness = ['(%ss %.2f)' % (JOINT_CMD_NAMES[k], v) for k, v in self.stiffness.iteritems()]
         return ''.join(speed + stiffness)
 
 

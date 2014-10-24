@@ -66,11 +66,11 @@ python spark_agent.py
 Now, the spark_agent is connected to simspark, and you can see a robot in the simulation, but it does nothing. Let's program it.
 
 
-### get sensor values
+### programming exercise
+Open the following python files, write code follow comments in files.
 
-
-### set joint commands
-
+* [get_sensor_values.py](./get_sensor_values.py)
+* [set_joint_commands.py](./set_joint_commands.py)
 
 
 
