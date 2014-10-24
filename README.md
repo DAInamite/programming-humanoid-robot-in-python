@@ -5,7 +5,8 @@ Source code of open course [Programming Humanoid Robot in Python](http://www.dai
 
 
 ## How to submit your exercise?
-Depending on your knowlege of git, there are 3 ways to download the code, do exercise and submit.
+There are 3 ways to download the code, do exercise and submit.
+Please choose one according to your knowlege of git.
 
 ### 1. (Recommended) Fork the repository and send me your github account
 1. create a github account if you don't have
