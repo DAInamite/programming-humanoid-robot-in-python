@@ -41,11 +41,13 @@ sudo pip install numpy matplotlib
 3. install numpy and matplotlib
 
 ```
-python -m pip install numpy matplotlib
+python -m pip install numpy matplotlib ipython
 ```
 
 ## Try out python
 If you are new to python, you can [try it out online](http://www.codecademy.com/en/tracks/python), and follow [Introduction to Python](http://introtopython.org/). If you want a little more depth, [Python Tutorial](http://docs.python.org/2/tutorial/) is a great place to start, We also recommend to [Learn Python the Hard Way](http://learnpythonthehardway.org/book/).
+
+You can try ipython notebooks that I used in the lecture by starting ```ipython notebook``` in this folder.
 
 ## Try out sample agent
 ### start sample agent
