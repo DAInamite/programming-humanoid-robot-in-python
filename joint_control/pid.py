@@ -29,7 +29,12 @@ class PIDController(object):
         @return control signal
         '''
         # YOUR CODE HERE
-c
+        a = self.Kp + self.Ki * self.dt + self.Kd / self.dt
+        b = -(self.Kp + 2 * self.Kd / self.dt)
+        c = self.Kd / self.dt
+        self.u += (e * a + self.e1 * b + self.e2 * c)
+        self.e2 = self.e1
+        self.e1 = ec
         return self.u
 
 
