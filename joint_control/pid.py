@@ -1,4 +1,8 @@
-'''
+'''In this exercise you need to implement the PID controller for joints of robot.
+
+* Task:
+    1. complete the control function in PIDController
+    2. adjust PID parameters for NAO in simulation
 '''
 
 # add PYTHONPATH
