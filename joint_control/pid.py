@@ -1,8 +1,10 @@
 '''In this exercise you need to implement the PID controller for joints of robot.
 
 * Task:
-    1. complete the control function in PIDController
+    1. complete the control function in PIDController with prediction
     2. adjust PID parameters for NAO in simulation
+
+* Hint: the motor in simulation can simple modelled by angle(t) = angle(t-1) + speed * dt
 '''
 
 # add PYTHONPATH
@@ -11,6 +13,7 @@ import sys
 sys.path.append(os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', 'introduction'))
 
 import numpy as np
+from collections import deque
 from spark_agent import SparkAgent, JOINT_CMD_NAMES
 
 
@@ -18,18 +21,32 @@ class PIDController(object):
     '''a discretized PID controller
     '''
     def __init__(self, dt, size):
+        '''
+        @param dt: step time
+        @param size: number of control values
+        @param delay: delay in number of steps
+        '''
         self.dt = dt
         self.u = np.zeros(size)
         self.e1 = np.zeros(size)
         self.e2 = np.zeros(size)
         # ADJUST PARAMETERS BELOW
+        delay = 0
         self.Kp = 0
         self.Ki = 0
         self.Kd = 0
+        self.y = deque(np.zeros(size), maxlen=delay + 1)
 
-    def control(self, e):
+    def set_delay(self, delay):
+        '''
+        @param delay: delay in number of steps
+        '''
+        self.y = deque(self.y, delay + 1)
+
+    def control(self, target, sensor):
         '''apply PID control
-        @param e: current tracking error
+        @param target: reference values
+        @param sensor: current values from sensor
         @return control signal
         '''
         # YOUR CODE HERE
@@ -53,8 +70,7 @@ class PIDAgent(SparkAgent):
         action = super(PIDAgent, self).think(perception)
         joint_angles = np.asarray(perception.joint.values())
         target_angles = np.asarray(self.target_joints.values())
-        e = target_angles - joint_angles
-        u = self.joint_controller.control(e)
+        u = self.joint_controller.control(target_angles, joint_angles)
         action.speed = dict(zip(self.joint_names, u))
         return action
 
