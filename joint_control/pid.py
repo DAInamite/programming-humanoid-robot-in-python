@@ -38,7 +38,7 @@ class PIDController(object):
         c = self.Kd / self.dt
         self.u += (e * a + self.e1 * b + self.e2 * c)
         self.e2 = self.e1
-        self.e1 = ec
+        self.e1 = e
         return self.u
 
 
