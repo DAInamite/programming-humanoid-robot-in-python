@@ -32,7 +32,7 @@ The recommended way to install python libraries is using *pip*.
 #### Ubuntu
 
 ```
-sudo apt-get install pip
+sudo apt-get install python-pip
 sudo pip install numpy matplotlib ipython
 ```
 #### Windows
