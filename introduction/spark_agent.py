@@ -4,7 +4,7 @@
 import socket
 import struct
 from threading import Thread
-from math import pi
+from math import pi, atan2, asin
 from sexpr import str2sexpr
 
 DEG_TO_RAD = pi / 180
@@ -164,6 +164,10 @@ class Perception:
                 self.bat = float(s[1])
             else:
                 raise RuntimeError('unknown perception: ' + str(s))
+
+        if 'torso' in self.gps:
+            data = self.gps['torso']
+            self.imu = [atan2(data[9], data[10]), asin(-data[8])]
 
     def _parse_vision(self, sexp):
         see = {}
