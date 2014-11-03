@@ -1,6 +1,6 @@
 
 
-def backToStand():
+def leftBackToStand():
     # Choregraphe bezier export in Python.
     names = list()
     times = list()

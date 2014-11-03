@@ -21,3 +21,6 @@ use machine learning to recognize robot's posture (following the example in [sci
 3. getting feature data from simulation and recognize current posture in [recognize_posture.py](./recognize_posture.py)
 
 ### Automonous standing up
+1. complete the [standing_up.py](./standing_up.py), e.g. call keyframe motion corresponds to current posture
+2. Test with the ```TestStandingUpAgent``` which turns off all joints regularly to make the robot falls
+3. (optional) The ```TestStandingUpAgent``` always falls to belly, please also test other suitations: e.g. execute a keyframe motion to make robot falls to another pose and let it stands up.

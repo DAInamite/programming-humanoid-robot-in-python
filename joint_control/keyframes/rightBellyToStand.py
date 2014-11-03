@@ -1,6 +1,6 @@
 
 
-def bellyToStand():
+def rightBellyToStand():
     # Choregraphe bezier export in Python.
     names = list()
     times = list()
