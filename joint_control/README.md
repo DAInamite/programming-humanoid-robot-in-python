@@ -12,6 +12,7 @@
 
 ## Posture Recognition
 use machine learning to recognize robot's posture (following the example in [scikit-learn-intro.ipynb](./scikit-learn-intro.ipynb)
+
 1. preparing dataset (step 1~2 in [scikit-learn-intro.ipynb](./scikit-learn-intro.ipynb) )
 	* the dateset are in *robot_pose_data* folder
 	* each file contains the data belongs to this posture, e.g. the data in *Back* file are collected when robot was in "Back" posture
