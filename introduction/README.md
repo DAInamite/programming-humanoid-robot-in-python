@@ -32,8 +32,8 @@ The recommended way to install python libraries is using *pip*.
 #### Ubuntu
 
 ```
-sudo apt-get install pip
-sudo pip install numpy matplotlib
+sudo apt-get install python-pip
+sudo pip install numpy matplotlib ipython
 ```
 #### Windows
 1. download and install python: https://www.python.org/download/windows/
@@ -41,11 +41,13 @@ sudo pip install numpy matplotlib
 3. install numpy and matplotlib
 
 ```
-python -m pip install numpy matplotlib
+python -m pip install numpy matplotlib ipython
 ```
 
 ## Try out python
 If you are new to python, you can [try it out online](http://www.codecademy.com/en/tracks/python), and follow [Introduction to Python](http://introtopython.org/). If you want a little more depth, [Python Tutorial](http://docs.python.org/2/tutorial/) is a great place to start, We also recommend to [Learn Python the Hard Way](http://learnpythonthehardway.org/book/).
+
+You can try ipython notebooks that I used in the lecture by starting ```ipython notebook``` in this folder.
 
 ## Try out sample agent
 ### start sample agent
@@ -69,7 +71,7 @@ Now, the spark_agent is connected to simspark, and you can see a robot in the si
 ### programming exercise
 Open the following python files, write code follow comments in files.
 
-* [get_sensor_value.py](./get_sensor_value.py)
+* [get_sensor_data.py](./get_sensor_data.py)
 * [set_joint_commands.py](./set_joint_commands.py)
 
 

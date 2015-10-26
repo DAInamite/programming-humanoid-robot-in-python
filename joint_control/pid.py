@@ -4,7 +4,9 @@
     1. complete the control function in PIDController with prediction
     2. adjust PID parameters for NAO in simulation
 
-* Hint: the motor in simulation can simple modelled by angle(t) = angle(t-1) + speed * dt
+* Hints:
+    1. the motor in simulation can simple modelled by angle(t) = angle(t-1) + speed * dt
+    2. use self.y to buffer model prediction
 '''
 
 # add PYTHONPATH
@@ -18,7 +20,8 @@ from spark_agent import SparkAgent, JOINT_CMD_NAMES
 
 
 class PIDController(object):
-    '''a discretized PID controller
+    '''a discretized PID controller, it controls an array of servos,
+       e.g. input is an array and output is also an array
     '''
     def __init__(self, dt, size):
         '''
