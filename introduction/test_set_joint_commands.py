@@ -2,16 +2,15 @@
 '''
 
 import unittest
-from mock import patch
+from mock import patch, MagicMock
 
 
-class TestGetSensorData(unittest.TestCase):
+class TestSetJointCommands(unittest.TestCase):
     @patch('spark_agent.SparkAgent.__init__', lambda i: None)  # no connection to simspark
     def test(self):
-        from get_sensor_data import MyAgent
-        from spark_agent import Perception
+        from set_joint_commands import MyAgent
 
-        perception = Perception()
+        perception = MagicMock()
 
         agent = MyAgent()
         action = agent.think(perception)
