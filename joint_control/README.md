@@ -11,14 +11,10 @@
 3. (optional) create your own keyframes
 
 ## Posture Recognition
-use machine learning to recognize robot's posture (following the example in [scikit-learn-intro.ipynb](./scikit-learn-intro.ipynb)
+use machine learning to recognize robot's posture [learn_posture.ipynb](./learn_posture.ipynb), the [scikit-learn-intro.ipynb](./scikit-learn-intro.ipynb) is a good example to follow.
 
-1. preparing dataset (step 1~2 in [scikit-learn-intro.ipynb](./scikit-learn-intro.ipynb) )
-	* the dateset are in *robot_pose_data* folder
-	* each file contains the data belongs to this posture, e.g. the data in *Back* file are collected when robot was in "Back" posture
-  * the data file can be load by ```pickle```, e.g. ```pickle.load(open('Back'))```, the data is a list of feature data
-  * the features (e.g. each row of the data) are ['AngleX', 'AngleY', 'LHipYawPitch', 'LHipRoll', 'LHipPitch', 'LKneePitch', 'RHipYawPitch', 'RHipRoll', 'RHipPitch', 'RKneePitch'], where 'AngleX' and 'AngleY' are body angle (e.g. ```Perception.imu```) and others are joint angles.
-2. traning dataset, and save the results (step 3~5 in [scikit-learn-intro.ipynb](./scikit-learn-intro.ipynb) )
+1. preparing dataset (step 1~2 in [learn_posture.ipynb](./learn_posture.ipynb) )
+2. traning dataset, and save the results (step 3~5 in [learn_posture.ipynb](./learn_posture.ipynb) )
 3. getting feature data from simulation and recognize current posture in [recognize_posture.py](./recognize_posture.py)
 
 ### Automonous standing up
