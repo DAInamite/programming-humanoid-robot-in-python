@@ -40,11 +40,41 @@ class AngleInterpolationAgent(PIDAgent):
 
     def angle_interpolation(self, keyframes):
         target_joints = {}
+        
+        currentTime = self.perception.time
+        names, times, keys = keyframes
+        
+        for i in range(len(names)): #iterate through all joints
+        name = names[i]
+            if name in self.joint_names: #only update given joints
+                for j in range(len(times[i]-1)): # each line of keys corresponds to a time
+                    if time[j] < currentTime and currentTime < time[j+1]:
+                        angleOfJoint = keys[j][0]
+                        handle1OfJoint = keys[j][1]
+                        handle2OfJoint = keys[j][2]
+                        
+                        delta_t0 = handle1OfJoint[1] # preceding point
+                        delta_angle0 = handle1OfJoint[2]
+                        angle0 = calculateJointAngle(name, delta_angle0)
+                        
+                        delta_t1 = handle2OfJoint[1] #following point
+                        delta_angle1 = handle2OfJoints[2]
+                        angle1 = calculateJointAngle(name, delta_angle1)
+                        
+                        #TODO
+                        target_joints[name] = c1*angle0 + c2*angle1*t + c2*angle2*t**2 + angle3*t**3 #each joint will get a new angle value
+            
         # YOUR CODE HERE
 
         return target_joints
+        
+    def calculateJointAngle(self, jointName, delta_angle):
+        return  self.joint(jointName) + delta_angle
+        
 
 if __name__ == '__main__':
     agent = AngleInterpolationAgent()
-    agent.keyframes = hello()  # CHANGE DIFFERENT KEYFRAMES
+    agent.keyframes = hello()  #leftBackToStand, leftBellyToStand, rightBackToStand, rightBellyToStand, wipe_forehead
     agent.run()
+    
+
