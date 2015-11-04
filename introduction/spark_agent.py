@@ -130,6 +130,7 @@ class Perception:
         self.see = [{}, {}]
         self.game_state = GameState()
         self.gps = {}
+        self.imu = [0, 0] # [AngleX, AngleY]
 
     def update(self, sexp):
         for s in sexp:
