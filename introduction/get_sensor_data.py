@@ -12,9 +12,9 @@ from spark_agent import SparkAgent
 
 class MyAgent(SparkAgent):
     def think(self, perception):
-        angle = 0
-        tempeture = 0
-        # YOUR CODE HERE
+        angle = perception.joint.get('HeadYaw')
+        tempeture = perception.joint_temperature.get('HeadYaw')
+        
         # set angle and tempeture to current data of joint HeadYaw
 
         print 'HeadYaw angle: ' + str(angle) + ' tempeture: ' + str(tempeture)
