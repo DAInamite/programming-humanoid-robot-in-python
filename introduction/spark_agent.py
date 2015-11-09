@@ -4,8 +4,9 @@
 import socket
 import struct
 from threading import Thread
-from math import pi, atan2, asin
+from math import pi, atan2, asin, cos, sin
 from sexpr import str2sexpr
+import numpy as np
 
 DEG_TO_RAD = pi / 180
 
@@ -168,7 +169,15 @@ class Perception:
 
         if 'torso' in self.gps:
             data = self.gps['torso']
-            self.imu = [atan2(data[9], data[10]), asin(-data[8])]
+            angX = atan2(data[9], data[10])
+            angY = asin(-data[8])
+            # convert angle range: angY in [-pi, pi], angX in [-pi/2, pi/2]
+            if (abs(angX) > pi / 2):
+                angX = pi + angX
+                angX = atan2(sin(angX), cos(angX))  # normalize
+                angY = pi - angY
+                angY = atan2(sin(angY), cos(angY))  # normalize
+            self.imu = [angX, angY]
 
     def _parse_vision(self, sexp):
         see = {}
