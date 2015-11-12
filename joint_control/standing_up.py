@@ -12,7 +12,7 @@ from recognize_posture import PostureRecognitionAgent
 class StandingUpAgent(PostureRecognitionAgent):
     def think(self, perception):
         self.standing_up()
-        return super(PostureRecognitionAgent, self).think(perception)
+        return super(StandingUpAgent, self).think(perception)
 
     def standing_up(self):
         posture = self.posture

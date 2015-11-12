@@ -34,11 +34,11 @@ class AngleInterpolationAgent(PIDAgent):
         self.keyframes = ([], [], [])
 
     def think(self, perception):
-        target_joints = self.angle_interpolation(self.keyframes)
+        target_joints = self.angle_interpolation(self.keyframes, perception)
         self.target_joints.update(target_joints)
-        return super(PIDAgent, self).think(perception)
+        return super(AngleInterpolationAgent, self).think(perception)
 
-    def angle_interpolation(self, keyframes):
+    def angle_interpolation(self, keyframes, perception):
         target_joints = {}
         # YOUR CODE HERE
 

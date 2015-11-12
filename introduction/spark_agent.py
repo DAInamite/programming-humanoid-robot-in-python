@@ -4,8 +4,9 @@
 import socket
 import struct
 from threading import Thread
-from math import pi, atan2, asin
+from math import pi, atan2, asin, cos, sin
 from sexpr import str2sexpr
+import numpy as np
 
 DEG_TO_RAD = pi / 180
 
@@ -130,6 +131,7 @@ class Perception:
         self.see = [{}, {}]
         self.game_state = GameState()
         self.gps = {}
+        self.imu = [0, 0] # [AngleX, AngleY]
 
     def update(self, sexp):
         for s in sexp:
@@ -148,7 +150,7 @@ class Perception:
                     jointv[i[0]] = i[1]
                 name = JOINT_SENSOR_NAMES[jointv['n']]
                 if 'ax' in jointv:
-                    self.joint[name] = float(jointv['ax']) * DEG_TO_RAD
+                    self.joint[name] = float(jointv['ax']) * DEG_TO_RAD * (-1 if name in INVERSED_JOINTS else 1)
                 if 'tp' in jointv:
                     self.joint_temperature[name] = float(jointv['tp'])
             elif name == VISION_PERCEPTOR or name == TOP_CAMERA:
@@ -167,7 +169,15 @@ class Perception:
 
         if 'torso' in self.gps:
             data = self.gps['torso']
-            self.imu = [atan2(data[9], data[10]), asin(-data[8])]
+            angX = atan2(data[9], data[10])
+            angY = asin(-data[8])
+            # convert angle range: angY in [-pi, pi], angX in [-pi/2, pi/2]
+            if (abs(angX) > pi / 2):
+                angX = pi + angX
+                angX = atan2(sin(angX), cos(angX))  # normalize
+                angY = pi - angY
+                angY = atan2(sin(angY), cos(angY))  # normalize
+            self.imu = [angX, angY]
 
     def _parse_vision(self, sexp):
         see = {}
@@ -188,7 +198,7 @@ class Action(object):
         self.speed = {}
 
     def to_commands(self):
-        speed = ['(%s %.2f)' % (JOINT_CMD_NAMES[k], v) for k, v in self.speed.iteritems()]
+        speed = ['(%s %.2f)' % (JOINT_CMD_NAMES[k], v * (-1 if k in INVERSED_JOINTS else 1)) for k, v in self.speed.iteritems()]
         stiffness = ['(%ss %.2f)' % (JOINT_CMD_NAMES[k], v) for k, v in self.stiffness.iteritems()]
         return ''.join(speed + stiffness)
 
