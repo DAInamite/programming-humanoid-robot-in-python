@@ -6,8 +6,8 @@
        http://doc.aldebaran.com/2-1/family/robots/bodyparts.html#effector-chain
     2. implement the calculation of local transformation for one joint in function
        ForwardKinematicsAgent.local_trans. The necessary documentation are:
-       http://doc.aldebaran.com/2-1/family/nao_h25/joints_h25.html
-       http://doc.aldebaran.com/2-1/family/nao_h25/links_h25.html
+       http://doc.aldebaran.com/2-1/family/nao_h21/joints_h21.html
+       http://doc.aldebaran.com/2-1/family/nao_h21/links_h21.html
     3. complete function ForwardKinematicsAgent.forward_kinematics, save the transforms of all body parts in torso
        coordinate into self.transforms of class ForwardKinematicsAgent
 
