@@ -3,8 +3,8 @@
 * Tasks:
     1. solve inverse kinemtatics for NAO's legs by using analytical or numerical method.
        You may need documentation of NAO's leg:
-       http://doc.aldebaran.com/2-1/family/nao_h25/joints_h25.html
-       http://doc.aldebaran.com/2-1/family/nao_h25/links_h25.html
+       http://doc.aldebaran.com/2-1/family/nao_h21/joints_h21.html
+       http://doc.aldebaran.com/2-1/family/nao_h21/links_h21.html
     2. use the results of inverse kinemtatics to control NAO's legs (in InverseKinematicsAgent.set_transforms)
        and test your inverse kinemtatics implementation.
 '''
