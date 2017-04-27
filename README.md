@@ -3,6 +3,8 @@ Programming Humanoid Robot In Python
 
 Source code of open course [Programming Humanoid Robot in Python](http://www.dainamite.de/programming-humanoid-robot-in-python/)
 
+1. [Introduction](./introduction)
+
 
 ## How to submit your exercise?
 There are 3 ways to download the code, do exercise and submit.
