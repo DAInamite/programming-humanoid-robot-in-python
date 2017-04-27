@@ -17,7 +17,7 @@ simspark
 ```
 
 #### Windows
-1. download zip package from https://db.tt/ymRTwNcT
+1. download [zip package](https://dainas.dai-labor.de:5001/sharing/9s6N1iM2K)
 2. extract the zip package
 3. execute *rcssserver3d.exe* to start simspark
 
