@@ -27,6 +27,8 @@ You can try ipython notebooks that I used in the lecture by starting ```ipython 
 
 ## SimSpark
 
+[SimSpark](http://simspark.sourceforge.net/) is a generic simulator for various multiagent simulations. It supports developing physical simulations for AI and robotics research with an open-source application framework. We use [customized version](https://github.com/xuyuan/SimSpark-SPL) which has NAO V4.
+
 #### Ubuntu
 1. add PPA and install
 ```
