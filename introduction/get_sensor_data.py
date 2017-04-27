@@ -3,7 +3,7 @@ In this exercise you need to know how to get sensor data.
 
 * Task: get the current joint angle and tempeture of joint HeadYaw
 
-* Hit: The current sensor data of robot are store in perception (class Perception in spark_agent.py)
+* Hint: The current sensor data of robot are store in perception (class Perception in spark_agent.py)
 
 '''
 
