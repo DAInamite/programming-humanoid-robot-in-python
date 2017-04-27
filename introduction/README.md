@@ -1,4 +1,4 @@
-# Week 1: software installization and sample agent
+# Week 1: software installation and sample agent
 
 ## Python
 First you have to [setup python](http://learnpythonthehardway.org/book/ex0.html), then install python libraries.
