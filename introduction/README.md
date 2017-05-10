@@ -1,6 +1,33 @@
 # Week 1: software installation and sample agent
-## software installation
-### SimSpark
+
+## Python
+First you have to [setup python](http://learnpythonthehardway.org/book/ex0.html), then install python libraries.
+The recommended way to install python libraries is using [pip](https://pip.pypa.io/en/stable/).
+
+#### Ubuntu
+
+```
+sudo apt-get install python-pip
+sudo pip install numpy matplotlib ipython
+```
+#### Windows
+1. download and install python: https://www.python.org/download/windows/
+2. install pip: https://pip.pypa.io/en/latest/installing.html
+3. install numpy and matplotlib
+
+```
+python -m pip install numpy matplotlib ipython
+```
+
+##  Learn Python
+If you are new to python, you can [try it out online](http://www.codecademy.com/en/tracks/python), and follow [Introduction to Python](http://introtopython.org/). If you want a little more depth, [Python Tutorial](http://docs.python.org/2/tutorial/) is a great place to start, We also recommend to [Learn Python the Hard Way](http://learnpythonthehardway.org/book/).
+
+You can try ipython notebooks that I used in the lecture by starting ```ipython notebook``` in this folder.
+
+
+## SimSpark
+
+[SimSpark](http://simspark.sourceforge.net/) is a generic simulator for various multiagent simulations. It supports developing physical simulations for AI and robotics research with an open-source application framework. We use [customized version](https://github.com/xuyuan/SimSpark-SPL) which has NAO V4.
 
 #### Ubuntu
 1. add PPA and install
@@ -25,32 +52,9 @@ simspark
 1. download source code from https://github.com/xuyuan/SimSpark-SPL
 2. follow the instruction in http://simspark.sourceforge.net/wiki/index.php/Main_Page
 
-### Python
-First you have to [setup python](http://learnpythonthehardway.org/book/ex0.html), then install python libraries.
-The recommended way to install python libraries is using *pip*.
 
-#### Ubuntu
-
-```
-sudo apt-get install python-pip
-sudo pip install numpy matplotlib ipython
-```
-#### Windows
-1. download and install python: https://www.python.org/download/windows/
-2. install pip: https://pip.pypa.io/en/latest/installing.html
-3. install numpy and matplotlib
-
-```
-python -m pip install numpy matplotlib ipython
-```
-
-## Try out python
-If you are new to python, you can [try it out online](http://www.codecademy.com/en/tracks/python), and follow [Introduction to Python](http://introtopython.org/). If you want a little more depth, [Python Tutorial](http://docs.python.org/2/tutorial/) is a great place to start, We also recommend to [Learn Python the Hard Way](http://learnpythonthehardway.org/book/).
-
-You can try ipython notebooks that I used in the lecture by starting ```ipython notebook``` in this folder.
-
-## Try out sample agent
-### start sample agent
+### Try out sample agent
+#### start sample agent
 1. start simspark
 	* [learn how to use simspark](http://simspark.sourceforge.net/wiki/index.php/Monitor)
 
@@ -68,12 +72,12 @@ python spark_agent.py
 Now, the spark_agent is connected to simspark, and you can see a robot in the simulation, but it does nothing. Let's program it.
 
 
-### programming exercise
-Open the following python files, write code follow comments in files.
+## Programming exercise
+Open the following python files, write code following comments in files.
 
 * [get_sensor_data.py](./get_sensor_data.py)
 * [set_joint_commands.py](./set_joint_commands.py)
 
-
+For testing, start simspark first, and execute python file, e.g. ```python get_sensor_data.py```
 
 
