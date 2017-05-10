@@ -17,5 +17,5 @@ Source code of open course [Programming Humanoid Robot in Python](http://www.dai
   ```
 5. do exercises
 6. commit your code and push to github
-7. *submit your git repo via ISIS assignment page*
+7. **submit your git repo via ISIS assignment page**
 
