@@ -73,11 +73,11 @@ Now, the spark_agent is connected to simspark, and you can see a robot in the si
 
 
 ## Programming exercise
-Open the following python files, write code follow comments in files.
+Open the following python files, write code following comments in files.
 
 * [get_sensor_data.py](./get_sensor_data.py)
 * [set_joint_commands.py](./set_joint_commands.py)
 
-
+For testing, start simspark first, and execute python file, e.g. ```python get_sensor_data.py```
 
 
