@@ -1,7 +1,7 @@
 Programming Humanoid Robot In Python
 ====================================
 
-Source code of open course [Programming Humanoid Robot in Python](http://www.dainamite.de/programming-humanoid-robot-in-python/)
+Source code for [Programming Humanoid Robot in Python](http://www.dainamite.de/programming-humanoid-robot-in-python/) Lecture in TU Berlin.
 
 1. [Introduction](./introduction)
 2. [Joint Control](./joint_control)
