@@ -4,7 +4,7 @@ Programming Humanoid Robot In Python
 Source code of open course [Programming Humanoid Robot in Python](http://www.dainamite.de/programming-humanoid-robot-in-python/)
 
 1. [Introduction](./introduction)
-
+2. [Joint Control](./joint_control)
 
 ## How to submit your exercise?
 
