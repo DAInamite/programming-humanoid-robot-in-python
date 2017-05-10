@@ -9,7 +9,7 @@ Source code for [Programming Humanoid Robot in Python](http://www.dainamite.de/p
 ## How to submit your exercise?
 ### inital setup
 * create a github account if you don't have
-* open [repository page]（https://github.com/DAInamite/programming-humanoid-robot-in-python）
+* open [repository page](https://github.com/DAInamite/programming-humanoid-robot-in-python)
 * click "Fork" button in top right corner
 * clone your fork to your computer:
   ```sh
