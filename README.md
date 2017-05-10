@@ -19,6 +19,7 @@ Source code for [Programming Humanoid Robot in Python](http://www.dainamite.de/p
 ### update in following weeks
 This repo is work in progress, please make git pull before doing exercise every week.
 
+### program and submit
 
 * do exercises
 * commit your code and push to github
