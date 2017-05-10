@@ -3,11 +3,15 @@
 1. complete the implementation of PID controller in [pid.py](./pid.py)
 2. use [pid_test.ipynb](./pid_test.ipynb) to tuning PID parameters
 	* start ```ipython notebook``` in this folder, then you can launch [pid_test.ipynb](./pid_test.ipynb) in your web browser
+    * follow instruction in notebook, run the code and tune PID parameters
 3. save the best parameters in ```__init__``` of ```class PIDController```
 
 ## Keyframe Motion
-1. implement angle interploation method by using splins interpolation or Bezier interpolation in file [angle_interpolation.py](./angle_interpolation.py).
-2. test your implementation with provided keyframes in *keyframes* folder
+1. implement angle interploation method by using splins interpolation or Bezier interpolation in file [angle_interpolation.py](./angle_interpolation.py), please follow instruction in the comments of the file.
+    * run simspark and [angle_interpolation.py](./angle_interpolation.py) to test [hello](./keyframes/hello.py) motion
+2. test your implementation with provided keyframes in [keyframes](./keyframes) folder， for example:
+    * import keyframe with ```from keyframes import hello```
+    * and set the keyframe in ```main``` function, e.g. ```agent.keyframes = hello()```
 3. (optional) create your own keyframes
 
 ## Posture Recognition
