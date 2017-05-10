@@ -12,7 +12,7 @@ Source code of open course [Programming Humanoid Robot in Python](http://www.dai
 2. open repository page: https://github.com/DAInamite/programming-humanoid-robot-in-python
 3. click "Fork" button in top right corner
 4. clone your fork to your computer:
-  ```
+  ```sh
   git clone git@github.com:YOUR_GITHUB_ACCOUNT/programming-humanoid-robot-in-python.git
   ```
 5. do exercises
