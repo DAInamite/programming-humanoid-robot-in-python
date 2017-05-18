@@ -29,7 +29,7 @@ class TestGetSensorData(unittest.TestCase):
         your_answer = sys.stdout.readline()
 
         sys.stdout.truncate(0)
-        print 'HeadYaw angle: ' + str(angle) + ' tempeture: ' + str(temperature)  # TODO: fix typo here
+        print 'HeadYaw angle: ' + str(angle) + ' temperature: ' + str(temperature)
         sys.stdout.seek(0)
         correct_answer = sys.stdout.readline()
         self.assertEqual(your_answer, correct_answer)
