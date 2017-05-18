@@ -21,6 +21,7 @@ use machine learning to recognize robot's posture [learn_posture.ipynb](./learn_
 2. traning dataset, and save the results (step 3~5 in [learn_posture.ipynb](./learn_posture.ipynb) )
 3. getting feature data from simulation and recognize current posture in [recognize_posture.py](./recognize_posture.py)
 4. if the result is not good in simulation, adding new train data with [add_training_data.ipynb](add_training_data.ipynb)
+5. commit file *robot_pose.pkl* as trained result to git before submission.
 
 ### Automonous standing up
 1. complete the [standing_up.py](./standing_up.py), e.g. call keyframe motion corresponds to current posture
