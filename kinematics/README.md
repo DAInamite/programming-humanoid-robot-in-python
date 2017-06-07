@@ -3,5 +3,7 @@ This week you need to implement forward and inverse kinematics for NAO robot, an
 
 The documentation of NAO can be found here: http://doc.aldebaran.com/2-1/family/nao_h25/index_h25.html#nao-h25
 
+An analytical solution for NAO's leg is described in section 8.3.3 [B-Human Team Report and Code Release 2016](https://github.com/bhuman/BHumanCodeRelease/raw/master/CodeRelease2016.pdf)
+
 
 
