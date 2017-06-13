@@ -41,7 +41,12 @@ class AngleInterpolationAgent(PIDAgent):
     def angle_interpolation(self, keyframes, perception):
         target_joints = {}
         # YOUR CODE HERE
+        target_joints = self.angle_interpolation_splines(keyframes, perception)
 
+        return target_joints
+
+    def angle_interpolation_splines(self, keyframes, perception):
+        target_joints = {}
         return target_joints
 
 if __name__ == '__main__':
