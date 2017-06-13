@@ -3,6 +3,7 @@ from pid import PIDAgent
 import numpy as np
 import unittest
 
+
 class PIDTestAgent(PIDAgent):
     def __init__(self):
         super(PIDTestAgent, self).__init__(player_id=1)
@@ -25,18 +26,17 @@ class PIDTestAgent(PIDAgent):
         return action
 
 
-
 class TestPID(unittest.TestCase):
-  def test(self):
-    agent = PIDTestAgent()
-    while len(agent.test_trajectory) > len(agent.target_requested):
-        agent.sense_think_act()
-    
-    t = np.asarray(agent.target_requested)
-    s = np.asarray(agent.sensor_value)
-    e = np.abs(t[:-1] - s[1:])
-    with open("test_pid.txt", 'w') as f:
-      f.write(str(np.mean(e)))
+    def test(self):
+        agent = PIDTestAgent()
+        while len(agent.test_trajectory) > len(agent.target_requested):
+            agent.sense_think_act()
+
+        t = np.asarray(agent.target_requested)
+        s = np.asarray(agent.sensor_value)
+        e = np.abs(t[:-1] - s[1:])
+        with open("test_pid.txt", 'w') as f:
+            f.write(str(np.mean(e)))
 
 if __name__ == '__main__':
     unittest.main()
