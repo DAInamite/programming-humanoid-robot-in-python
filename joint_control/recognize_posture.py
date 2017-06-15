@@ -33,10 +33,10 @@ class PostureRecognitionAgent(AngleInterpolationAgent):
     def recognize_posture(self, perception):
         posture = 'unknown'
         # YOUR CODE HERE
-        features = [perception.imu[0] * 0, 1.0] + [perception.joint[j] for j in ['LHipYawPitch', 'LHipRoll', 'LHipPitch', 'LKneePitch', 'RHipYawPitch', 'RHipRoll', 'RHipPitch', 'RKneePitch']]
-        posture = self.posture_classifier.predict(features)
+        features = [perception.joint[j] for j in ['LHipYawPitch', 'LHipRoll', 'LHipPitch', 'LKneePitch', 'RHipYawPitch', 'RHipRoll', 'RHipPitch', 'RKneePitch']] + perception.imu
+        posture = self.posture_classifier.predict([features])
         posture = self.postures[posture[0]]
-        print posture, features
+        #print posture, features
         return posture
 
 if __name__ == '__main__':
