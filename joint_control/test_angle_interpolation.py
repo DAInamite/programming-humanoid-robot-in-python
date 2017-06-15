@@ -17,7 +17,6 @@ def init_agent(agent):
 
     agent.perception = perception
 
-
 class TestAngleInterpolation(unittest.TestCase):
     @patch('spark_agent.SparkAgent.__init__', lambda self, simspark_ip, simspark_port, teamname, player_id, sync_mode: init_agent(self))  # no connection to simspark
     def test(self):
@@ -38,6 +37,7 @@ class TestAngleInterpolation(unittest.TestCase):
             trajectory_t.append(perception.time - start_time)
             perception.time += 0.01
 
+        keyframes = leftBackToStand()
         plot_joint = 'RKneePitch'
         plot_joint_id = None
         # check error in keyframe point
