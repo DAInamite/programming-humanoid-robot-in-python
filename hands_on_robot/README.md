@@ -3,6 +3,6 @@ This week you need to implement distributed computing via [remote procedure call
 
 The server and client have to be implemented together:
 * [ServerAgent](./agent_server.py) provides remote RPC service;
-* [ClientAgent](./agent_client.py) request remote call from server and provide non-blocking capibility.
+* [ClientAgent](./agent_client.py) requests remote call from server and provides non-blocking capibility.
 
 
