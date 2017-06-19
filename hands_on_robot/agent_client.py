@@ -3,7 +3,7 @@
 * The agent_server.py has to be implemented first (at least one function is implemented and exported)
 * Please implement functions in ClientAgent first, which should request remote call directly
 * The PostHandler can be implement in the last step, it provides non-blocking functions, e.g. agent.post.execute_keyframes
- * Hints: threading(https://docs.python.org/2/library/threading.html) may needed for monitoring if the task is done
+ * Hints: [threading](https://docs.python.org/2/library/threading.html) may needed for monitoring if the task is done
 '''
 
 import weakref
