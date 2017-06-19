@@ -6,7 +6,7 @@ Source code for [Programming Humanoid Robot in Python](http://www.dainamite.de/p
 1. [Introduction](./introduction)
 2. [Joint Control](./joint_control)
 3. [Kinematics](./kinematics)
-4. [Hands on robot)(./hans_on_robot)
+4. [Hands on robot](./hans_on_robot)
 
 ## How to submit your exercise?
 ### inital setup
