@@ -51,7 +51,7 @@ class ForwardKinematicsAgent(AngleInterpolationAgent):
         :return: transformation
         :rtype: 4x4 matrix
         '''
-        T = matrix()
+        T = identity(4)
         # YOUR CODE HERE
 
         return T
@@ -65,7 +65,7 @@ class ForwardKinematicsAgent(AngleInterpolationAgent):
             T = identity(4)
             for joint in chain_joints:
                 angle = joints[joint]
-                Tl = local_trans(joint, angle)
+                Tl = self.local_trans(joint, angle)
                 # YOUR CODE HERE
 
                 self.transforms[joint] = T
