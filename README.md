@@ -3,10 +3,11 @@ Programming Humanoid Robot In Python
 
 Source code for [Programming Humanoid Robot in Python](http://www.dainamite.de/programming-humanoid-robot-in-python/) Lecture in TU Berlin.
 
-1. [Introduction](./introduction)
-2. [Joint Control](./joint_control)
-3. [Kinematics](./kinematics)
-4. [Distributed Computing](./distributed_computing)
+1. [Software Installtion](./software_installation)
+2. [Introduction](./introduction)
+3. [Joint Control](./joint_control)
+4. [Kinematics](./kinematics)
+5. [Distributed Computing](./distributed_computing)
 
 ## How to submit your exercise?
 ### inital setup
@@ -25,7 +26,7 @@ This repo is work in progress, please [sync git](https://help.github.com/article
 
 * do exercises
 * commit your code and push to github
-* **submit your git repo via ISIS assignment page**
+* submit your **git repo url** via ISIS assignment page
 
 ## Demo in lecture
 The demo showed in lecture are included in this repo as well, please check files (mostly *.ipynb) in subfolders.
