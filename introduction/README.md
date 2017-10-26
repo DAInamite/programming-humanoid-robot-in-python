@@ -1,6 +1,6 @@
 # Week 2: Introduction and Sample Agent
 
-Please follow [software installion](../software_installation/README.md) first, and then complete the exercise.
+Please follow [software installation](../software_installation/README.md) first, and then complete the exercise.
 
 ## Programming exercise
 Open the following python files, write code following comments in files.
