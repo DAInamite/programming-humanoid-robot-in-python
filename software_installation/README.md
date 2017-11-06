@@ -8,7 +8,7 @@ The recommended way to install python libraries is using [pip](https://pip.pypa.
 
 ```
 sudo apt-get install python-pip
-sudo pip install numpy matplotlib ipython
+pip install numpy matplotlib ipython jupyter
 ```
 #### Windows
 1. download and install python: https://www.python.org/download/windows/
@@ -16,7 +16,7 @@ sudo pip install numpy matplotlib ipython
 3. install numpy and matplotlib
 
 ```
-python -m pip install numpy matplotlib ipython
+python -m pip install numpy matplotlib ipython jupyter
 ```
 
 ##  Learn Python
