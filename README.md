@@ -1,7 +1,7 @@
 Programming Humanoid Robot In Python
 ====================================
 
-Source code for [Programming Humanoid Robot in Python](http://www.dainamite.de/programming-humanoid-robot-in-python/) Lecture in TU Berlin.
+Source code for [Programming Humanoid Robot in Python](http://www.dainamite.de/#program_soccer_robots) Lecture in TU Berlin.
 
 1. [Software Installtion](./software_installation)
 2. [Introduction](./introduction)
