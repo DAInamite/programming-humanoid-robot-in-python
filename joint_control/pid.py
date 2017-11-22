@@ -12,7 +12,7 @@
 # add PYTHONPATH
 import os
 import sys
-sys.path.append(os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', 'introduction'))
+sys.path.append(os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', 'software_installation'))
 
 import numpy as np
 from collections import deque
