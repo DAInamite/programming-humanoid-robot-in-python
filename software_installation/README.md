@@ -54,7 +54,7 @@ simspark
 
 #### From source code (Other operation systems)
 1. download source code from https://github.com/xuyuan/SimSpark-SPL
-2. follow the instruction in http://simspark.sourceforge.net/wiki/index.php/Main_Page
+2. follow the instruction in https://gitlab.com/robocup-sim/SimSpark/wikis/home
 
 
 ### Try out sample agent
