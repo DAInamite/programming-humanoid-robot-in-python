@@ -63,9 +63,9 @@ simspark
 	* [learn how to use simspark](http://simspark.sourceforge.net/wiki/index.php/Monitor)
 
 2. start a console (cmd in windows)
-3. go to the *introduction* source code folder
+3. go to the *software_installtion* source code folder
 ```
-cd introduction
+cd software_installtion
 ```
 
 4. start sample agent:
