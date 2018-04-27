@@ -1,4 +1,4 @@
-# Week 1: software installation
+# 1: software installation
 
 ## Python
 First you have to [setup python](http://learnpythonthehardway.org/book/ex0.html), then install python libraries.
