@@ -1,4 +1,4 @@
-# Week 4: Distributed Computing
+# 5: Distributed Computing
 This week you need to implement distributed computing via [remote procedure call (RPC)](https://en.wikipedia.org/wiki/Remote_procedure_call), which has similiar interface you get with real robot via PyNaoQi.
 
 The server and client have to be implemented together:
