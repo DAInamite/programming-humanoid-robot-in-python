@@ -1,4 +1,4 @@
-# Week 1: software installation
+# 1: software installation
 
 ## Python
 First you have to [setup python](http://learnpythonthehardway.org/book/ex0.html), then install python libraries.
@@ -43,6 +43,10 @@ sudo apt-get install rcssserver3d-spl
 simspark
 ```
 
+#### AppImage for other Linux distribution
+1. download [simspark.AppImage](https://github.com/BerlinUnited/SimSpark-SPL/releases/download/0.7.0/Simspark_v0.7.0m.AppImage)
+2. [Make it executable and double-click it](https://github.com/AppImage/AppImageKit/wiki#-what-is-an-appimage)
+
 #### Windows
 1. download [zip package](https://dainas.dai-labor.de:5001/sharing/9s6N1iM2K)
 2. extract the zip package
@@ -50,7 +54,7 @@ simspark
 
 #### From source code (Other operation systems)
 1. download source code from https://github.com/xuyuan/SimSpark-SPL
-2. follow the instruction in http://simspark.sourceforge.net/wiki/index.php/Main_Page
+2. follow the instruction in https://gitlab.com/robocup-sim/SimSpark/wikis/home
 
 
 ### Try out sample agent
@@ -59,9 +63,9 @@ simspark
 	* [learn how to use simspark](http://simspark.sourceforge.net/wiki/index.php/Monitor)
 
 2. start a console (cmd in windows)
-3. go to the *introduction* source code folder
+3. go to the *software_installtion* source code folder
 ```
-cd introduction
+cd software_installtion
 ```
 
 4. start sample agent:
