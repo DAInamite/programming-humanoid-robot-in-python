@@ -1,4 +1,4 @@
-# Week 2: Introduction and Sample Agent
+# 2: Introduction and Sample Agent
 
 Please follow [software installation](../software_installation/README.md) first, and then complete the exercise.
 

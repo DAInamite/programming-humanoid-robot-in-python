@@ -1,4 +1,4 @@
-# Week 2: Joint Control
+# 3: Joint Control
 ## PID Controller for Joint Servo
 1. complete the implementation of PID controller in [pid.py](./pid.py)
 2. use [pid_test.ipynb](./pid_test.ipynb) to tuning PID parameters
