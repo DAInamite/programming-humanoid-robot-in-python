@@ -1,6 +1,9 @@
 '''
 '''
-
+# add PYTHONPATH
+import os
+import sys
+sys.path.append(os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', 'software_installation'))
 import unittest
 from mock import patch, MagicMock
 

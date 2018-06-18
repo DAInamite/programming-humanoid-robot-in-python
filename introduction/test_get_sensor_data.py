@@ -1,7 +1,10 @@
 '''
 '''
 
+# add PYTHONPATH
+import os
 import sys
+sys.path.append(os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', 'software_installation'))
 import unittest
 from mock import patch
 from cStringIO import StringIO
@@ -24,6 +27,7 @@ class TestGetSensorData(unittest.TestCase):
         perception.joint_temperature['HeadYaw'] = temperature
 
         agent = MyAgent()
+        agent.perception = perception
         agent.think(perception)
         sys.stdout.seek(0)
         your_answer = sys.stdout.readline()
