@@ -48,7 +48,7 @@ simspark
 2. [Make it executable and double-click it](https://github.com/AppImage/AppImageKit/wiki#-what-is-an-appimage)
 
 #### Windows
-1. download [zip package](https://dainas.dai-labor.de:5001/sharing/9s6N1iM2K)
+1. download [zip package](https://github.com/xuyuan/SimSpark-SPL/blob/win32/simspark-spl-win32-latest.zip)
 2. extract the zip package
 3. execute *rcssserver3d.exe* to start simspark
 
