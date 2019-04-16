@@ -44,7 +44,7 @@ simspark
 ```
 
 #### AppImage for other Linux distribution
-1. download [simspark.AppImage](https://github.com/BerlinUnited/SimSpark-SPL/releases/download/0.7.0/Simspark_v0.7.0m.AppImage)
+1. download [simspark.AppImage](https://github.com/BerlinUnited/SimSpark-SPL/releases/download/0.7.1/Simspark_v0.7.1-naoth-4.AppImage)
 2. [Make it executable and double-click it](https://github.com/AppImage/AppImageKit/wiki#-what-is-an-appimage)
 
 #### Windows
