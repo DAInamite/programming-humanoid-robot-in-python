@@ -38,7 +38,7 @@ You can try ipython notebooks that I used in the lecture by starting ```ipython 
 2. [Make it executable and double-click it](https://github.com/AppImage/AppImageKit/wiki#-what-is-an-appimage)
 
 #### Windows
-1. download [zip package](https://github.com/xuyuan/SimSpark-SPL/blob/win32/simspark-spl-win32-latest.zip)
+1. download [zip package](https://github.com/BerlinUnited/SimSpark-SPL/releases/)
 2. extract the zip package
 3. execute *rcssserver3d.exe* to start simspark
 
