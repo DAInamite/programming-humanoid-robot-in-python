@@ -20,9 +20,9 @@ python -m pip install numpy matplotlib ipython jupyter
 ```
 
 ##  Learn Python
-If you are new to python, you can [try it out online](http://www.codecademy.com/en/tracks/python), and follow [Introduction to Python](http://introtopython.org/). If you want a little more depth, [Python Tutorial](http://docs.python.org/2/tutorial/) is a great place to start, We also recommend to [Learn Python the Hard Way](http://learnpythonthehardway.org/book/).
+If you are new to python, you can follow [Introduction to Python](http://introtopython.org/). If you want a little more depth, [Python Tutorial](http://docs.python.org/2/tutorial/) is a great place to start, We also recommend to [Learn Python the Hard Way](http://learnpythonthehardway.org/book/).
 
-You can try ipython notebooks that I used in the lecture by starting ```ipython notebook``` in this folder.
+You can try ipython notebooks that I used in the lecture by starting ```ipython notebook``` in this folder or [open in Colab]((https://colab.research.google.com/notebooks/welcome.ipynb).
 
 * [python_basic.ipynb](./python_basic.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DAInamite/programming-humanoid-robot-in-python/blob/master/software_installation/python_basic.ipynb)
 * [numpy_baisc.ipynb](./numpy_baisc.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DAInamite/programming-humanoid-robot-in-python/blob/master/software_installation/numpy_baisc.ipynb)
