@@ -24,6 +24,10 @@ If you are new to python, you can [try it out online](http://www.codecademy.com/
 
 You can try ipython notebooks that I used in the lecture by starting ```ipython notebook``` in this folder.
 
+* [python_basic.ipynb](./python_basic.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DAInamite/programming-humanoid-robot-in-python/blob/master/software_installation/python_basic.ipynb)
+* [numpy_baisc.ipynb](./numpy_baisc.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DAInamite/programming-humanoid-robot-in-python/blob/master/software_installation/numpy_baisc.ipynb)
+* [matplotlib_basic.ipynb](./matplotlib_basic.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DAInamite/programming-humanoid-robot-in-python/blob/master/software_installation/matplotlib_basic.ipynb)
+
 
 ## SimSpark
 
