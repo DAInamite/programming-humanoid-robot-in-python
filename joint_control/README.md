@@ -2,7 +2,7 @@
 ## PID Controller for Joint Servo
 1. complete the implementation of PID controller in [pid.py](./pid.py)
 2. use [pid_test.ipynb](./pid_test.ipynb) to tuning PID parameters
-	* start ```ipython notebook``` in this folder, then you can launch [pid_test.ipynb](./pid_test.ipynb) in your web browser
+	* start ```jupyter notebook``` in this folder, then you can launch [pid_test.ipynb](./pid_test.ipynb) in your web browser
     * follow instruction in notebook, run the code and tune PID parameters
 3. save the best parameters in ```__init__``` of ```class PIDController```
 
