@@ -1,6 +1,6 @@
 '''Base agent for SimSpark, it implements the sense-think-act loop
 '''
-
+from builtins import bytes
 import socket
 import struct
 from threading import Thread
@@ -198,8 +198,8 @@ class Action(object):
         self.speed = {}
 
     def to_commands(self):
-        speed = ['(%s %.2f)' % (JOINT_CMD_NAMES[k], v * (-1 if k in INVERSED_JOINTS else 1)) for k, v in self.speed.iteritems()]
-        stiffness = ['(%ss %.2f)' % (JOINT_CMD_NAMES[k], v) for k, v in self.stiffness.iteritems()]
+        speed = ['(%s %.2f)' % (JOINT_CMD_NAMES[k], self.speed[k] * (-1 if k in INVERSED_JOINTS else 1)) for k in self.speed]
+        stiffness = ['(%ss %.2f)' % (JOINT_CMD_NAMES[k], self.stiffness[v]) for k in self.stiffness]
         return ''.join(speed + stiffness)
 
 
@@ -233,22 +233,22 @@ class SparkAgent(object):
     def send_command(self, commands):
         if self.sync_mode:
             commands += '(syn)'
-        self.socket.sendall(struct.pack("!I", len(commands)) + commands)
+        self.socket.sendall(struct.pack(b"!I", len(commands)) + bytes(commands, encoding='utf8'))
 
     def connect(self, simspark_ip, simspark_port):
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.socket.connect((simspark_ip, simspark_port))
 
     def sense(self):
-        length = ''
+        length = b''
         while(len(length) < 4):
             length += self.socket.recv(4 - len(length))
         length = struct.unpack("!I", length)[0]
-        msg = ''
+        msg = b''
         while len(msg) < length:
             msg += self.socket.recv(length - len(msg))
 
-        sexp = str2sexpr(msg)
+        sexp = str2sexpr(msg.decode())
         self.perception.update(sexp)
         return self.perception
 
