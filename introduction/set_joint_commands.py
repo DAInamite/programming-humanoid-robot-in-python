@@ -21,9 +21,13 @@ class MyAgent(SparkAgent):
     def think(self, perception):
         action = super(MyAgent, self).think(perception)
         # YOUR CODE HERE
-
+        print("Setting joint commands stifness,speed")
+        action.speed['HeadYaw'] = 0.1   #HeadYaw in Joint_CMD_NAMES
+        action.stiffness['LShoulderPitch'] = 0  #LShoulderPitch in Joint_CMD_NAMES
         return action
 
 if '__main__' == __name__:
     agent = MyAgent()
+    print("~!~!~!~!~!~!~!~!TRATS!~!~!~!~!~!~!~!~")
     agent.run()
+    print("~!~!~!~!~!~!~!~!DN3!~!~!~!~!~!~!~!~")
