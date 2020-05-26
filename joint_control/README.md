@@ -12,6 +12,7 @@
 2. test your implementation with provided keyframes in [keyframes](./keyframes) folder， for example:
     * import keyframe with ```from keyframes import hello```
     * and set the keyframe in ```main``` function, e.g. ```agent.keyframes = hello()```
+    * Note: the provided keyframes doesn't have joint `RHipYawPitch`, please set `RHipYawPitch` as `LHipYawPitch` which reflects the real robot.
 3. (optional) create your own keyframes
 
 ## Posture Recognition
