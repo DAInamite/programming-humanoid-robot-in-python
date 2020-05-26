@@ -13,6 +13,7 @@
     * import keyframe with ```from keyframes import hello```
     * and set the keyframe in ```main``` function, e.g. ```agent.keyframes = hello()```
 3. (optional) create your own keyframes
+4. Note: the provided keyframes doesn't have joint `RHipYawPitch`, please set `RHipYawPitch` as `LHipYawPitch` which reflects the real robot.
 
 ## Posture Recognition
 use machine learning to recognize robot's posture [learn_posture.ipynb](./learn_posture.ipynb), the [scikit-learn-intro.ipynb](./scikit-learn-intro.ipynb) is a good example to follow.
