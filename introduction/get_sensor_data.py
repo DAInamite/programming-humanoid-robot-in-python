@@ -13,7 +13,7 @@ import sys
 sys.path.append(os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', 'software_installation'))
 
 from spark_agent import SparkAgent
-
+from spark_agent import JOINT_SENSOR_NAMES
 
 class MyAgent(SparkAgent):
     def think(self, perception):

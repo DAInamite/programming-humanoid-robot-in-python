@@ -28,4 +28,6 @@ class MyAgent(SparkAgent):
 
 if '__main__' == __name__:
     agent = MyAgent()
+    print("~!~!~!~!~!~!~!~!TRATS!~!~!~!~!~!~!~!~")
     agent.run()
+    print("~!~!~!~!~!~!~!~!DN3!~!~!~!~!~!~!~!~")
