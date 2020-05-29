@@ -1,5 +1,3 @@
-
-
 def hello():
     # Choregraphe bezier export in Python.
     names = list()
