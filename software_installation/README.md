@@ -40,7 +40,7 @@ You can try ipython notebooks that I used in the lecture by starting ```ipython 
 #### Windows
 1. download [zip package](https://github.com/BerlinUnited/SimSpark-SPL/releases/)
 2. extract the zip package
-3. execute *rcssserver3d.exe* to start simspark
+3. execute *SimSparkSPL.bat* to start simspark
 
 #### From source code (Other operation systems)
 1. download source code from https://github.com/xuyuan/SimSpark-SPL
