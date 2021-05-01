@@ -21,7 +21,14 @@ class MyAgent(SparkAgent):
     def think(self, perception):
         action = super(MyAgent, self).think(perception)
         # YOUR CODE HERE
-
+        
+        # stiffness and speed are dictionaries
+        # stiffness is something like position
+        # speed is something like movement
+        # '[L/R]ShoulderPitch' can be 0 (arms down) or 1 (arms up)
+        action.stiffness['LShoulderPitch'] = 0
+        #action.stiffness['RShoulderPitch'] = 0     
+        action.speed['HeadYaw'] = 0.1
         return action
 
 if '__main__' == __name__:
