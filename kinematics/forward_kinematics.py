@@ -12,7 +12,8 @@
        coordinate into self.transforms of class ForwardKinematicsAgent
 
 * Hints:
-    the local_trans has to consider different joint axes and link parameters for different joints
+    1. the local_trans has to consider different joint axes and link parameters for different joints
+    2. Please use radians and meters as unit.
 '''
 
 # add PYTHONPATH
