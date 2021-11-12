@@ -6,7 +6,6 @@ import struct
 from threading import Thread
 from math import pi, atan2, asin, cos, sin
 from sexpr import str2sexpr
-import numpy as np
 
 DEG_TO_RAD = pi / 180
 
@@ -19,6 +18,7 @@ GYRO_RATE_PERCEPTOR = "GYR"
 GAME_STATE_PERCEPTOR = "GS"
 GPS_PERCEPTOR = "GPS"
 BAT_PERCEPTOR = "BAT"
+SONAR_PERCEPTOR = "US"
 
 VISION_PERCEPTOR = "See"
 VISION_PERCEPTOR_TRUE_BALL = "ballpos"
@@ -132,6 +132,7 @@ class Perception:
         self.game_state = GameState()
         self.gps = {}
         self.imu = [0, 0] # [AngleX, AngleY]
+        self.us = {}
 
     def update(self, sexp):
         for s in sexp:
@@ -164,6 +165,8 @@ class Perception:
                 self.gps[s[1][1]] = [float(v) for v in s[2][1:]]
             elif name == BAT_PERCEPTOR:
                 self.bat = float(s[1])
+            elif name == SONAR_PERCEPTOR:
+                self.us[s[1]] = [float(dist) for dist in s[2]]
             else:
                 raise RuntimeError('unknown perception: ' + str(s))
 
