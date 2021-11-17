@@ -1,10 +1,8 @@
-#!/usr/bin/env python
 ##
 ##  sexpr.py - by Yusuke Shinyama
 ##
 ##  * public domain *
 ##
-import future
 
 ##  AbstractFilter
 ##
