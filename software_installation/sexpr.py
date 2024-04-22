@@ -4,7 +4,11 @@
 ##
 ##  * public domain *
 ##
-import future
+try:
+    import future
+except:
+    # future is here if missing :)
+    pass
 
 ##  AbstractFilter
 ##
