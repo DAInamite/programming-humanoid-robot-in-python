@@ -50,7 +50,7 @@ You can try ipython notebooks that I used in the lecture by starting ```ipython 
 ### Try out sample agent
 #### start sample agent
 1. start simspark
-	* [learn how to use simspark](http://simspark.sourceforge.net/wiki/index.php/Monitor)
+	* [learn how to use simspark](https://gitlab.com/robocup-sim/SimSpark/-/wikis/Monitor)
 
 2. start a console (cmd in windows)
 3. go to the *software_installtion* source code folder
