@@ -21,6 +21,10 @@ class MyAgent(SparkAgent):
     def think(self, perception):
         action = super(MyAgent, self).think(perception)
         # YOUR CODE HERE
+        if 'lae1'in action.stiffness:
+            action.stiffness['lae1'] = 0
+        if 'he1' in action.speed:
+            action.speed.['he1'] = 0.1
 
         return action
 
